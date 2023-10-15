@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PHP-форма для загрузки файлов на сервер</title>
+    </head>
+
+    <body>
+        <form
+            method="post"
+            action="upload_my.php"
+            enctype="multipart/form-data"
+        >
+            Выберите файл:
+            <input type="file" name="filename" size="10" />
+            <input type="submit" value="Загрузить" />
+        </form>
+    </body>
+</html>
