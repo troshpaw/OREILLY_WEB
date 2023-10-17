@@ -1,16 +1,9 @@
 <?php
     date_default_timezone_set('Europe/Moscow');
-    
-    /*
-    $script_tz = date_default_timezone_get();
-    
-    if (strcmp($script_tz, ini_get('date.timezone'))){
-        echo 'Часовой пояс скрипта отличается от заданного в INI-файле.';
-    } else {
-        echo 'Часовой пояс скрипта и настройки INI-файла совпадают.';
-    }
-    */
-    
-    echo date("Y-m-d h:i:s"); // 2023-10-13T06:59:00.563Z
 
+    $current_date = date(DATE_ATOM); // DATE_ATOM = Y-m-d\TH:i:sP
+    echo $current_date . "<br>"; // output: 2023-10-17T09:19:13+03:00
+
+    echo date(DATE_W3C) . "<br>"; // 2023-10-17T09:35:58+03:00
+    echo date(DATE_ISO8601) . "<br>"; // 2023-10-17T09:35:58+0300
 ?>
